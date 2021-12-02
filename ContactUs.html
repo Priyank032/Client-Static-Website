@@ -1,21 +1,22 @@
+ 
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en"> 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/custom.css" />
-  <link rel="stylesheet" href="./css/contactUs.css" />
+  <link rel="stylesheet" href="./css/contactUs.css" /> 
   <title>Contact Us</title>
 </head>
 
 <body>
+
   <div class="p-3 bg-primary text-center text-white">
     <h6 class="m-0 fw-normal fs-6">
-      Join Live Demo with Q&A.
-      <a href="/" class="fw-bold text-white">Register for Demo</a>
+      <p>Join Live Demo with Q&A. </p>
+      <a href="/" class="fw-bold text-white">Register for Demo</a> 
     </h6>
   </div>
 
@@ -23,7 +24,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <a class="navbar-brand fw-bold" href="index.html">
+          <a class="navbar-brand fw-bold" href="#">
             <img src="./images/logo.jpg" alt="" />
           </a>
         </div>
@@ -37,8 +38,6 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html"> Home </a>
             </li>
-           
-
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="https://priyank032.github.io/pricing-table/">Pricing</a>
             </li>
@@ -56,29 +55,30 @@
       </div>
     </nav>
   </header>
-
+  
   <section>
     <div class="container">
       <h2 class="contact-title">Contact us</h2>
       <div class="row align-items-center shadow-lg p-4">
+          
         <div class="col-md-6 col-lg-6 col-sm-12">
-          <div class="contact-form">
-            <form>
+          <div class="contact-form"> 
+            <form action="mail.php" method="POST">
               <div class="main-input-div">
                 <label for="name"><span>Name :</span></label>
-                <input type="text" id="name" name="user_name" />
+                <input type="text" id="Name" name="Name" />
               </div>
               <div class="main-input-div">
-                <label for="mail"><span>Email :</span></label>
-                <input type="email" id="mail" name="user_email" />
+                <label for="email"><span>Email :</span></label>
+                <input type="email" id="Email" name="Email" />
               </div>
               <div class="main-input-div">
-                <label for="msg"><span>Message :</span></label>
-                <textarea rows="4" cols="50"></textarea>
+                <label for="Message"><span>Message :</span></label>
+                <textarea id="Message" name="Message" rows="4" cols="50"></textarea>
               </div>
               <div class="main-submit-div">
-                <input type="submit" />
-              </div>
+                <input type="submit" name="submit" value="Submit" onclick="myFunction()"/>
+              </div> 
             </form>
           </div>
         </div>
@@ -250,7 +250,14 @@
   <!-- Footer -->
 
   <script src="./js/fontawesome.js" crossorigin="anonymous"></script>
-  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+function myFunction() {
+  alert("Your message send successfully!");
+}
+</script>
+
+   
 </body>
 
 </html>
