@@ -174,18 +174,18 @@ section {
   width: calc(100% - 40px);
 }
 
-.features-detail h5 {
+.features-detail h3 {
   /* text-shadow: 0px 0.1rem 0.2rem #7bd9ff; */
   display: inline-block;
   position: relative;
 }
 
-.features-detail h5::after {
+.features-detail h3::after {
   content: "";
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 35%;
+  height: 15%;
   width: 97%;
   background: #ade7ff;
   z-index: -1;
