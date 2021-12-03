@@ -16,7 +16,7 @@ body {
 }
 
 .navbar-brand img {
-  width: 45px;
+  width: 55px;
 }
 
 img {
@@ -321,8 +321,8 @@ img {
   border-top: 1px solid rgb(233, 228, 228);
   border-right: 1px solid rgb(233, 228, 228);
   border-left: 1px solid rgb(233, 228, 228);
-  box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(201, 195, 195);
-  border-radius: 30px;
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+  border-radius: 10px;
 }
 .tabss-section .tab_last {
   border-right: 1px solid #333;
@@ -373,7 +373,7 @@ img {
 
 .tabss-section .nav-tabs .nav-link {
   color: #0f7ae4;
-  font-weight: 900;
+  font-weight:400;
 }
 
 .tabss-section .nav-tabs .nav-item.show .nav-link,
